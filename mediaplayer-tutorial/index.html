@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediaplayer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>
+        Start To Code
+      </h1>
+    </nav>
+
+    <main>
+
+    
+    <div class="mediaplayer-container">
+      <h3>Kies een nummer!</h3>
+
+      <div class="modifier-container">
+        <div class="custom-select">
+          <select id="songselector">
+            <option value="happy-birthday">Happy Birthday</option>
+            <option value="matrix">Matrix</option>
+            <option value="blackbox">Blackbox</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modifier-container">
+        <h3>Volume</h3>
+        <div class="modifier">
+          <div>
+            0
+          </div>
+          <div>
+            <input
+            type="range"
+            name="volume"
+            id="volume"
+            min="0"
+            max="2"
+            step="0.01"
+          />
+          </div>
+          <div>
+            200%
+          </div>
+        </div>
+      </div>
+
+    <div class="modifier-container">
+      <h3>Headphones</h3>
+      <div class="modifier">
+        <div>
+          links
+        </div>
+        <div>
+          <input type="range" name="pan" id="pan" min="-1" max="1" step="0.01" />
+        </div>
+        <div>
+          rechts
+        </div>
+      </div> 
+    </div>
+
+    <div class="modifier-container">
+      <h3>Filter</h3>
+      <div class="modifier">
+        <div>
+          --
+        </div>
+        <div>
+          <input
+          type="range"
+          name="filter"
+          id="filter"
+          min="0"
+          max="1"
+          value="1"
+          step="0.01"
+        />
+        </div>
+        <div>
+          ++
+        </div>
+      </div>
+
+      
+    </div>
+
+
+    <div class="modifier-container--bottom">
+      <button class="btn" id="play">Play</button>
+      <button class="btn" id="stop" disabled>Stop</button>
+    </div>
+  </div>
+  </main>
+
+  <section class="tutorial container">
+
+      <h1>Workshop - Start To Code</h1>
+      <p>We gaan een mediaplayer maken!</p>
+      <p>We gaan een simpele mediaplayer leren programmeren waarin je zelf mp3 bestanden in kan afspelen en manipuleren.</p>
+      <p>Hiervoor hebben we 3 codetalen nodig</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    
+      <h2>Stap 1 - Mappen en Bestanden</h2>
+      <p>We hebben eerst en vooral een code-editor nodig. In deze workshop gaan we werken met <a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+      
+      <h4>1.1 Maak een nieuwe map aan op een locatie naar keuze. Geef hem een logische naam (bv mediaplayer)</h4>
+      <img src="./images/tutorial1.png" alt="maak een map">
+
+      <h4>1.2 Open het programma <a href="https://code.visualstudio.com/">Visual Studio Code</a> en open de folder die je net hebt aangemaakt</h4>
+      <img src="./images/tutorial2.png" alt="open visual studio code">
+
+      <h4>1.3 Maak de onderstaande mappenstructuur aan en maak je <span>index.html, app.js en main.css</span> bestanden aan</h4>
+      <img src="./images/tutorial3.png" alt="maak mappenstructuur aan">
+
+      <h4>1.4 Installeer de live server extentie in Visual Studio Code</h4>
+      <img src="./images/tutorial4.png" alt="installeer de extentie">
+
+      <h4>1.5 Start de live server op door rechtsonderaan op GO Live te klikken</h4>
+      <p>Je ingestelde browser zal nu een blanco webpagina openen.</p>
+      <p>Tijd om ze in te vullen!</p>
+
+      <h2>Stap 2 - HTML en CSS </h2>
+      <p>Tijd om de website in te vullen. Dan krijg je meer als een blanco webpagina</p>
+
+      <h4>2.1 Kopieer onderstaande code en plak deze in je <span>index.html-bestand</span>.</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/1/embed/html/"></script>
+      <p>Dit is de basis structuur waar we in verder werken, vergeet je code niet op te slaan (file->save of ctr+s)</p>
+
+      <h4>2.2 Kopieer onderstaande code en plak deze in je <span>styles.css-bestand</span>.</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/2/embed/css/"></script>
+      <p>Dit bevat de stijlen die we zullen nodig hebben om onze media-player de juiste opmaak te geven.</p>
+      <p>Vergeet niet op te slaan.</p>
+      
+
+      <h4>2.3 Kijk eens naar het resultaat in je browser</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/2/embed/result/"></script>
+      <p>Als je alles juist hebt gedaan zou het er zo moeten uit zien.</p>
+
+      <h4>2.4 Laten we eens met de kleuren spelen, verander in je css-bestand de <span>background-color</span> van je body naar iets anders</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/6/embed/result/"></script>
+      <p>De kleur onder je Mediaplayer balk zou moeten veranderen naar de kleur die je hebt gekozen.</p>
+      
+      <h2>Stap 3 - Interactiviteit met Javascript</h2>
+
+      <h4>3.1 Controleer in je <span>index.html-bestand</span> of je het script tag er zeker bij staat.</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/8/embed/html/"></script>
+
+      <h4>3.2 Ga naar het <span>app.js-bestand</span> en zet er de volgende code in:</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/13/embed/js/"></script>
+      <img class="img__small" src="./images/tutorial5.png" alt="alert">
+      <p>als je een pop-up als deze te zien krijgt heb je succesvol je script uitgevoerd, je mag deze lijn hierna weer verwijderen</p>
+
+      <h2>Stap 4 - Bouwen van Mediaplayer</h2>
+
+      <h4>4.1 Voeg onderstaande code toe in je <span>index.html-bestand</span> tussen de body-tags</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/20/embed/html/"></script>
+      <p>In combinatie met de styling die we al eerder in css hebben toegevoegd zou deze er nu moeten uitzien zoals hieronder</p>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/19/embed/result/"></script>
+
+      <h4>4.2 Voeg onderstaande code toe in je <span>app.js-bestand</span> helemaal bovenaan</h4>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/17/embed/js/"></script>
+      <p>Deze code bevat onze constructor. We creeren ook events, namelijk het luider zetten van de speakers, het pannen van links naar rechts en een filter.</p>
+      <p>Als je meer info wenst kan je altijd eens piepen op <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext?retiredLocale=nl">MDN</a></p>
+
+      <h4>4.3 Toevoegen van mp3 bestanden in onze audio-map</h4>
+      <p>Ga via je verkenner naar de map audio en plak hier enkele mp3 bestanden in.</p>
+      <img class="img__small" src="./images/tutorial6.png" alt="music">
+      <p>Je kan gratis royalty vrije mp3 bestanden downloaden op <a href="https://pixabay.com/">pixabay</a></p>
+      <p>In deze tutorial werken we met <a href="https://pixabay.com/music/special-occasions-happy-birthday-to-you-piano-version-13976/">Happy Birthday</a>,
+      <a href="https://pixabay.com/music/deep-house-black-scorpion-music-matrix-132549/">Matrix</a> en <a href="https://pixabay.com/music/introoutro-intro-music-black-box-roughly-made-bass-house-13217/">blackbox</a></p>
+      <p>Als je je eigen mp3 bestanden wilt gebruiken ga je de labels in je <span>index.html-bestand</span> moeten aanpassen zodat de naam overeenkomt met de naam van de audiofiles.</p>
+      <p>hieronder een aangepast voorbeeld</p>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/27/embed/html/"></script>
+      <p>de mp3-files hun namen zijn in dit geval <span>beyonce, drake en billyeyelash</span> </p>
+      
+      
+
+      <h4>4.4 Buttons koppelen</h4>
+      <p>Plak onderstaande code onderaan in je <span>app.js-bestand</span>.</p>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/22/embed/js/"></script>
+      <p>Met deze code initialiseren we onze applicatie en linken we het script aan de buttons die we in onze <span>index.html-pagina</span> hebben gemaakt</p>
+
+      <h4>4.5 Events toevoegen aan de buttons</h4>
+      <p>Plak onderstaande code onder je cacheElements functie, dit zijn click-en input events.</p>
+      <p>Dit zijn functies die onze buttons effectief iets laten doen. <br>
+      </p>
+
+      <h4>4.6 Audio laten afspelen, starten en stoppen.</h4>
+      <p>Plak onderstaande code onder je registerListeners functie</p>
+      <script async src="//jsfiddle.net/babusiaux/e2dkza89/25/embed/js/"></script>
+    
+      <h2>Stap 5 - Start je Live Server (onderaan in <a href="https://code.visualstudio.com/">Visual Studio Code</a>) en speel met je zelfgemaakte mediaplayer!</h2>
+      <p>Proficiat met je eerste zelfgemaakte webapplicatie!</p>
+    </div>
+    
+  </section>
+
+  </body>
+  <script src="./js/app.js" type="module"></script>
+</html>

@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(251, 251, 255);
+    font-family: sans-serif;
+    margin: 0;
+    color: #2D2D2D;
+}
+
+nav {
+    background-color:rgb(0, 96, 223);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+a {
+    color: rgb(0, 96, 223);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav h1{
+    margin: 0;
+    padding: 0.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(251, 251, 255);
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.5rem;
+    width: 50%;
+}
+
+section ul{
+    color: rgb(47, 185, 49);
+}
+
+img {
+    width: 30rem;
+    height: 15rem;
+}
+
+.img__small {
+    display: block;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+h2 {
+    padding-top: 1rem;
+}
+
+span {
+    color: rgb(47, 185, 49);
+    font-size: larger;
+}
+
+.scripts {
+    width: 10rem;
+    
+}
+
+.mediaplayer-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    border-radius: 12px;
+    padding-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px 18px rgba(0,0,0,0.1);
+    
+}
+
+
+.modifier-container {
+    margin-bottom: 0;
+}
+
+.modifier-container--bottom {
+    padding-top: 1rem;
+}
+
+.modifier {
+    width: 25%;
+    font-size: 0.5rem;
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 900;
+}
+
+.custom-select select {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+
+.custom-select option{
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(229, 229, 229);
+    border: none;
+    border-radius: 12px;
+    padding: 0.4rem;
+}
+
+.btn:hover  {
+background-color: rgb(0, 96, 223);
+border: none;
+color: white;
+}
